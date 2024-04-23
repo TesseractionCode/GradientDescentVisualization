@@ -21,7 +21,7 @@ visualizer.unitPerPixel = 0.01
 
 visualizer.genImage()
 
-ball_pos = [.9, .9]
+ball_pos = [.8, .7]
 descent_rate = 0.04
 
 
@@ -39,10 +39,10 @@ def render():
     screen_x, screen_y = visualizer.cartesianPosToScreenPos(
         ball_pos[0], ball_pos[1])
     pygame.draw.circle(screen, (255, 255, 255), (screen_x, screen_y), 10)
-
+    
     pygame.display.flip()
 
-
+render()
 running = True
 while running:
 
